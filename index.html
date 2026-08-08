@@ -1,0 +1,413 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>大店立地法 開店カレンダー｜大店立地法の届出を全国横断で一覧（開店予定日つき）</title>
+<meta name="description" content="全国の都道府県・政令市が公告している大店立地法の届出（新設・変更・廃止）を横断で一覧化。開店予定日から逆算した「声をかける日」つき。 33件を掲載中。">
+<style>
+:root{--bg:#f5f7fa;--panel:#fff;--ink:#12212e;--sub:#5f7385;--ac:#1663a8;--open:#0a8a55;--wait:#8a6d0a;--past:#8b95a1;--line:#e0e7ee}
+@media(prefers-color-scheme:dark){:root{--bg:#0b141c;--panel:#111f2b;--ink:#dbe6ef;--sub:#8ba0b2;--ac:#4ea8f5;--open:#2fc98a;--wait:#d6ab2e;--past:#6b7783;--line:#1d3040}}
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,"Hiragino Sans","Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+header{background:linear-gradient(135deg,var(--ac),#0a3a63);color:#fff;padding:30px 0 26px}
+.wrap{max-width:820px;margin:0 auto;padding:0 16px}
+h1{margin:0;font-size:23px}.tag{opacity:.93;margin-top:8px;font-size:14px}
+.stats{margin-top:14px;display:flex;flex-wrap:wrap;gap:8px}
+.stat{font-size:12.5px;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:20px}
+.note{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;margin:18px 0;font-size:13px;color:var(--sub)}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 6px}
+.filters select,.filters button{font:inherit;font-size:13px;padding:6px 11px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);cursor:pointer}
+.filters button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+main{padding:6px 0 50px}
+.n{display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
+.d{flex:0 0 62px;text-align:center;border-right:1px solid var(--line);padding-right:10px}
+.y{display:block;font-size:11.5px;color:var(--sub)}.md{display:block;font-size:19px;font-weight:700;color:var(--ac);line-height:1.25}
+.est{display:inline-block;font-size:10px;color:var(--sub);border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-top:3px}
+.b{flex:1;min-width:0}.b h3{margin:3px 0 6px;font-size:16.5px;word-break:break-word}
+.top{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.kind{font-size:11px;font-weight:700;border-radius:5px;padding:1px 7px;color:#fff}
+.k-new{background:#1663a8}.k-chg{background:#7a5cc4}.k-end{background:#98572e}
+.pref{font-size:11.5px;color:var(--sub);border:1px solid var(--line);border-radius:5px;padding:1px 7px}
+.meta{font-size:13px;color:var(--sub)}
+.win{font-size:12.5px;font-weight:700;margin:7px 0 3px}
+.win.open{color:var(--open)}.win.wait{color:var(--wait)}.win.past,.win.info{color:var(--past);font-weight:500}
+.meta2{font-size:12.5px;color:var(--sub);margin-top:4px}
+.meta2 a{color:var(--ac);text-decoration:none;font-weight:600}
+.empty{text-align:center;color:var(--sub);padding:30px}
+footer{color:var(--sub);font-size:12px;padding:22px 0 40px;border-top:1px solid var(--line)}
+footer p{margin:6px 0}
+</style></head><body>
+<header><div class="wrap"><h1>🏬 大店立地法 開店カレンダー</h1>
+<div class="tag">全国の都道府県・政令市が公告している大店立地法の届出（新設・変更・廃止）を横断で一覧化。開店予定日から逆算した「声をかける日」つき。</div>
+<div class="stats"><span class="stat">掲載 33件</span><span class="stat">声をかける窓が開いている案件 11件</span><span class="stat">開店予定日の公告あり 0件／推定 33件</span><span class="stat">2026-08-08 時点</span></div>
+</div></header>
+<div class="wrap">
+<div class="note">
+<b>読み方</b>：日付は<b>開店予定日（新設する日）</b>。公告に開店予定日の記載が無い新設案件は、大店立地法 第5条第4項（届出日から8か月を経過した後でなければ新設できない）にもとづく<b>制度上の最短日</b>を「推定」と表示しています。実際の開店日は各自治体の公告および事業者の発表をご確認ください。<br>
+「声をかける窓」は<b>開店予定日の120日前</b>を起点とした目安の表示です。
+</div>
+<div class="filters">
+  <select id="fp"><option value="">全ての都道府県</option><option value="埼玉県">埼玉県</option><option value="千葉県">千葉県</option><option value="神奈川県">神奈川県</option><option value="福岡県">福岡県</option></select>
+  <select id="fk"><option value="">全ての区分</option><option value="新設">新設届</option><option value="変更">変更届</option><option value="廃止">廃止届</option></select>
+  <button id="fo" type="button">窓が開いている案件だけ</button>
+</div>
+</div>
+<main><div class="wrap" id="list">
+<article class="n" data-pref="神奈川県" data-kind="新設" data-state="past">
+    <div class="d"><span class="y">2026</span><span class="md">07/19</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>バロー横浜下永谷店</h3>
+      <div class="meta">📍横浜市港南区</div>
+      
+      <div class="win past">制度上の最短日を経過（すでに開店している可能性）</div>
+      <div class="meta2">届出日 2025-11-19 ｜ 縦覧終了 2026-04-06 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou3.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">08/26</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>菊名駅ビル</h3>
+      <div class="meta">📍横浜市港北区</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで18日）</div>
+      <div class="meta2">届出日 2025-12-26 ｜ 縦覧終了 2026-05-25 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou3.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">10/27</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>ハードオフ・オフハウス・ホビーオフ横浜青葉店</h3>
+      <div class="meta">📍横浜市青葉区</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで80日）</div>
+      <div class="meta2">届出日 2026-02-27 ｜ 縦覧終了 2026-07-27 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">11/18</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>Ａコープ中田店</h3>
+      
+      
+      <div class="win open">声をかける窓：開いています（開店まで102日）</div>
+      <div class="meta2">届出日 2026-03-18 ｜ 縦覧終了 2026-08-03 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">11/26</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>ランドマークプラザ</h3>
+      
+      
+      <div class="win open">声をかける窓：開いています（開店まで110日）</div>
+      <div class="meta2">届出日 2026-03-26 ｜ 縦覧終了 2026-08-03 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">11/27</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>（仮称）船橋本町一丁目計画</h3>
+      <div class="meta">📍船橋市本町一丁目115番6ほか</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで111日）</div>
+      <div class="meta2">届出日 2026-03-27 ｜ 縦覧終了 2026-08-17 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/01</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>ドラッグコスモスいすみ店</h3>
+      <div class="meta">📍いすみ市日在字南御堂給1559番3ほか</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで115日）</div>
+      <div class="meta2">届出日 2026-03-31 ｜ 縦覧終了 2026-08-17 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/01</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>ドラッグコスモス安布里店</h3>
+      <div class="meta">📍館山市安布里字昭田223番ほか</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで115日）</div>
+      <div class="meta2">届出日 2026-03-31 ｜ 縦覧終了 2026-08-17 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/01</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>薬王堂千葉多古店</h3>
+      <div class="meta">📍香取郡多古町多古字九藏560番1ほか</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで115日）</div>
+      <div class="meta2">届出日 2026-04-01 ｜ 縦覧終了 2026-08-17 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/01</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>タイヨー成田店</h3>
+      <div class="meta">📍成田市土屋字新着1308番1ほか</div>
+      
+      <div class="win open">声をかける窓：開いています（開店まで115日）</div>
+      <div class="meta2">届出日 2026-04-01 ｜ 縦覧終了 2026-08-17 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/06</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>ＤＣＭ瀬谷店</h3>
+      
+      
+      <div class="win open">声をかける窓：開いています（開店まで120日）</div>
+      <div class="meta2">届出日 2026-04-06 ｜ 縦覧終了 2026-08-24 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="open">
+    <div class="d"><span class="y">2026</span><span class="md">12/06</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>ＤＣＭひなた山店</h3>
+      
+      
+      <div class="win open">声をかける窓：開いています（開店まで120日）</div>
+      <div class="meta2">届出日 2026-04-06 ｜ 縦覧終了 2026-08-24 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2026</span><span class="md">12/27</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>薬王堂上里七本木店</h3>
+      <div class="meta">📍児玉郡上里町七本木2796-2外</div>
+      
+      <div class="win wait">窓が開くまであと21日（2026-08-29〜）</div>
+      <div class="meta2">届出日 2026-04-27 ｜ 縦覧終了 2026-09-22 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2026</span><span class="md">12/28</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>（仮称）ドラッグコスモス大善寺店</h3>
+      <div class="meta">📍福岡県久留米市大善寺町夜明字小豆町380ほか</div>
+      
+      <div class="win wait">窓が開くまであと22日（2026-08-30〜）</div>
+      <div class="meta2">届出日 2026-04-28 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2026</span><span class="md">12/30</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>（仮称）新宮ファッションモール</h3>
+      <div class="meta">📍福岡県糟屋郡新宮町下府土地区画整理事業１５街区</div>
+      
+      <div class="win wait">窓が開くまであと24日（2026-09-01〜）</div>
+      <div class="meta2">届出日 2026-04-30 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">01/27</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>薬王堂千葉長生店</h3>
+      <div class="meta">📍長生郡長生村本郷字大菅7345番ほか</div>
+      
+      <div class="win wait">窓が開くまであと52日（2026-09-29〜）</div>
+      <div class="meta2">届出日 2026-05-27 ｜ 縦覧終了 2026-10-13 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">01/28</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>ドラッグコスモス籠原店</h3>
+      <div class="meta">📍熊谷市新堀字北原1055番1外</div>
+      
+      <div class="win wait">窓が開くまであと53日（2026-09-30〜）</div>
+      <div class="meta2">届出日 2026-05-28 ｜ 縦覧終了 2026-10-12 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">01/28</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>（仮称）ドラッグコスモス潤野店</h3>
+      <div class="meta">📍福岡県飯塚市潤野字卯田５９番１ 他</div>
+      
+      <div class="win wait">窓が開くまであと53日（2026-09-30〜）</div>
+      <div class="meta2">届出日 2026-05-28 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">02/04</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>クスリのアオキ南大塚店</h3>
+      <div class="meta">📍川越市南大塚2丁目13番26外</div>
+      
+      <div class="win wait">窓が開くまであと60日（2026-10-07〜）</div>
+      <div class="meta2">届出日 2026-06-04 ｜ 縦覧終了 2026-10-19 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">02/04</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>（仮称）コープ蕨北町店</h3>
+      <div class="meta">📍蕨市北町四丁目3291番地</div>
+      
+      <div class="win wait">窓が開くまであと60日（2026-10-07〜）</div>
+      <div class="meta2">届出日 2026-06-04 ｜ 縦覧終了 2026-10-19 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">02/12</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>（仮称）ドラッグコスモス田川大任店</h3>
+      <div class="meta">📍福岡県田川市大字伊田52番、53番、54番</div>
+      
+      <div class="win wait">窓が開くまであと68日（2026-10-15〜）</div>
+      <div class="meta2">届出日 2026-06-12 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">02/22</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>コジマ×ビックカメラ新船橋タウン</h3>
+      <div class="meta">📍船橋市山手三丁目4番地2ほか</div>
+      
+      <div class="win wait">窓が開くまであと78日（2026-10-25〜）</div>
+      <div class="meta2">届出日 2026-06-22 ｜ 縦覧終了 2026-11-10 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">02/25</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>2027年国際園芸博覧会</h3>
+      <div class="meta">📍横浜市瀬谷区・旭区</div>
+      
+      <div class="win wait">窓が開くまであと81日（2026-10-28〜）</div>
+      <div class="meta2">届出日 2026-06-25 ｜ 縦覧終了 2026-11-16 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/01</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>BRANCH 横浜南部市場・横浜南部市場 食の専門店街</h3>
+      
+      
+      <div class="win wait">窓が開くまであと85日（2026-11-01〜）</div>
+      <div class="meta2">届出日 2026-07-01 ｜ 縦覧終了 2026-11-16 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/06</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>ゲオ・セカンドストリート甘木旭町店</h3>
+      <div class="meta">📍福岡県朝倉市大字甘木字水町３２番１ 外</div>
+      
+      <div class="win wait">窓が開くまであと90日（2026-11-06〜）</div>
+      <div class="meta2">届出日 2026-07-06 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="千葉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/07</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">千葉県</span></div>
+      <h3>柏髙島屋ステーションモール</h3>
+      <div class="meta">📍柏市末広町1番地7ほか</div>
+      
+      <div class="win wait">窓が開くまであと91日（2026-11-07〜）</div>
+      <div class="meta2">届出日 2026-07-07 ｜ 縦覧終了 2026-11-30 ｜ <a href="https://www.pref.chiba.lg.jp/keishi/daiten/todokede/todokede-koukoku.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/08</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>イオンタウン吉川美南</h3>
+      <div class="meta">📍吉川市美南三丁目23-1外</div>
+      
+      <div class="win wait">窓が開くまであと92日（2026-11-08〜）</div>
+      <div class="meta2">届出日 2026-07-08 ｜ 縦覧終了 2026-11-17 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/09</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>バナーズビル</h3>
+      <div class="meta">📍本庄市本庄2丁目3番地6号外</div>
+      
+      <div class="win wait">窓が開くまであと93日（2026-11-09〜）</div>
+      <div class="meta2">届出日 2026-07-09 ｜ 縦覧終了 2026-12-07 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/10</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>吉川駅前ショッピングプラザ</h3>
+      <div class="meta">📍吉川市保一丁目13番3号</div>
+      
+      <div class="win wait">窓が開くまであと94日（2026-11-10〜）</div>
+      <div class="meta2">届出日 2026-07-10 ｜ 縦覧終了 2026-12-07 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="福岡県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/13</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">福岡県</span></div>
+      <h3>（仮称）ダイレックスつつじヶ丘店</h3>
+      <div class="meta">📍福岡県大野城市つつじヶ丘一丁目６番１</div>
+      
+      <div class="win wait">窓が開くまであと97日（2026-11-13〜）</div>
+      <div class="meta2">届出日 2026-07-13 ｜ <a href="https://www.pref.fukuoka.lg.jp/contents/daiten2026.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/16</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>Joshin鴻巣店</h3>
+      <div class="meta">📍鴻巣市袋字窪763番1外</div>
+      
+      <div class="win wait">窓が開くまであと100日（2026-11-16〜）</div>
+      <div class="meta2">届出日 2026-07-16 ｜ 縦覧終了 2026-12-07 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="神奈川県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/17</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">神奈川県</span></div>
+      <h3>ＭＡＲＫ ＩＳ みなとみらい</h3>
+      
+      
+      <div class="win wait">窓が開くまであと101日（2026-11-17〜）</div>
+      <div class="meta2">届出日 2026-07-17 ｜ 縦覧終了 2026-12-07 ｜ <a href="https://www.city.yokohama.lg.jp/business/keizai/horei/horitsu/rittihou/joukyou/joukyou2.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article><article class="n" data-pref="埼玉県" data-kind="新設" data-state="wait">
+    <div class="d"><span class="y">2027</span><span class="md">03/17</span><span class="est">推定</span></div>
+    <div class="b">
+      <div class="top"><span class="kind k-new">新設届</span><span class="pref">埼玉県</span></div>
+      <h3>イオンタウンふじみ野</h3>
+      <div class="meta">📍ふじみ野市福岡二丁目1500番地74外</div>
+      
+      <div class="win wait">窓が開くまであと101日（2026-11-17〜）</div>
+      <div class="meta2">届出日 2026-07-17 ｜ 縦覧終了 2026-12-07 ｜ <a href="https://www.pref.saitama.lg.jp/a0802/daikibokouritenpo/documents/todokedeitiran.html" target="_blank" rel="noopener">公告元（自治体）で確認 →</a></div>
+    </div>
+  </article>
+</div>
+<div class="wrap"><p class="empty" id="none" style="display:none">条件に合う案件がありません。</p></div>
+</main>
+<div class="wrap"><footer>
+<p>出典：各都道府県・政令指定都市が大規模小売店舗立地法にもとづき公告・縦覧している届出情報。各案件のリンク先が一次情報です。</p>
+<p>掲載しているのは店舗名称・所在地・届出日・店舗面積・駐車場収容台数等の<b>事実と公告元へのリンク</b>のみで、公告文の転載は行っていません。内容は収集時点のもので、最新・正確性を保証するものではありません。取引や営業の判断は必ず一次情報でご確認ください。</p>
+<p>当サイトは会員登録・決済・お問い合わせフォームを設けておらず、閲覧者の個人情報を取得しません。</p>
+</footer></div>
+<script>
+(function(){
+  var fp=document.getElementById('fp'),fk=document.getElementById('fk'),fo=document.getElementById('fo');
+  var cards=[].slice.call(document.querySelectorAll('.n')),none=document.getElementById('none'),only=false;
+  function apply(){
+    var n=0;
+    cards.forEach(function(c){
+      var ok=(!fp.value||c.dataset.pref===fp.value)&&(!fk.value||c.dataset.kind===fk.value)&&(!only||c.dataset.state==='open');
+      c.style.display=ok?'':'none'; if(ok)n++;
+    });
+    none.style.display=n?'none':'';
+  }
+  fp.onchange=fk.onchange=apply;
+  fo.onclick=function(){only=!only;fo.className=only?'on':'';apply();};
+})();
+</script>
+
+
+
+<script data-goatcounter="https://junikeda.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+</body></html>
